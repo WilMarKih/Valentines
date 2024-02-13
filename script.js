@@ -8,8 +8,8 @@ function showMessage(response) {
     // Set button position to absolute
     noButton.style.position = "absolute";
 
-    // Change image source to "gun.gif"
-    document.getElementsByClassName("image")[0].src = "images/gun.gif";
+    // Change image source to "us.jpg"
+    document.getElementsByClassName("image")[0].src = "images/us.jpg";
 
     // Generate random coordinates within the visible container
     const randomX = Math.max(0, Math.floor(Math.random() * maxWidth));
@@ -32,12 +32,12 @@ function showMessage(response) {
     document.getElementById("name").remove();
     document.getElementById("no-button").remove();
 
-    // Update text content, show message, and change image source to "dance.gif"
+    // Update text content, show message, and change image source to "us.jpg"
     const yesMessage = document.getElementById("question");
     yesMessage.textContent = "I LOVE YOU SCRUMPTIOUS, HAPPY VALENTINES\n😘😘";
     yesMessage.style.display = "block";
     yesMessage.style.fontStyle = "normal";
-    document.getElementsByClassName("image")[0].src = "images/dance.gif";
+    document.getElementsByClassName("image")[0].src = "images/us.jpg";
 
     // Remove yes button
     document.getElementById("yesButton").remove();
